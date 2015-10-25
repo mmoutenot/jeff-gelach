@@ -1,0 +1,80 @@
+@import 'nib'
+
+html, body
+  margin 0
+  font-family 'Helvetica Neue', Helvetica, Arial
+
+#header
+  position fixed
+  top 0
+  right 0
+  left 0
+  height 5rem
+  width 100%
+  background-color rgba(#00CD9F, 0.8)
+
+  .header-content
+    display flex
+    align-items center
+    justify-content space-between
+    height 100%
+    margin 0 10%
+
+  .links
+    flex 1
+    display flex
+    align-items center
+    justify-content space-around
+    font-size 20px
+    color white
+
+  img.logo
+    height 3.5rem
+    width 3.5rem
+
+#poster
+  width 100%
+
+  img
+    max-width 100%
+
+#service
+  background-image url('/assets/images/storyboard-color.gif')
+  background-size cover
+  color white
+  font-weight bold
+  padding 2rem 20%
+  font-size 20px
+
+  h2
+    color white
+
+h2
+  text-align center
+  font-size 38px
+  color #4A4A4A
+
+#user-experience
+  .content
+    text-align center
+
+    .cards
+      display flex
+      flex-wrap wrap
+
+    .card
+      flex 1
+      min-width 10rem
+      min-height 10rem
+
+      &#app-store
+        image '/assets/images/app-store.png'
+
+      &#app-stack
+        image '/assets/images/app-stack.png'
+
+      &#icon-sketches
+        image '/assets/images/icon-sketches.png'
+
+#resume
+  padding 2rem 20%
